@@ -1,0 +1,46 @@
+{
+    "name": "simpl-plus-formatter",
+    "displayName": "Simpl+ Formatter",
+    "description": "A formatter for Crestron Simpl+",
+    "icon": "./logo.png",
+    "version": "1.0.0",
+    "repository": "",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Formatters"
+    ],
+    "activationEvents": [
+        "onLanguage:simpl+"
+    ],
+    "main": "./dist/extension.js",
+    "contributes": {
+        "languages": [
+            {
+                "id": "simpl+",
+                "aliases": [
+                    "Crestron",
+                    "simpl+"
+                ],
+                "extensions": [
+                    ".usp"
+                ]
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run package",
+        "compile": "webpack",
+        "watch": "webpack --watch",
+        "package": "webpack --mode production --devtool hidden-source-map"
+    },
+    "devDependencies": {
+        "@types/node": "17.x",
+        "@types/vscode": "^1.62.0",
+        "ts-loader": "^9.2.8",
+        "typescript": "^4.6.4",
+        "webpack": "^5.70.0",
+        "webpack-cli": "^4.9.2"
+    }
+}
