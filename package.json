@@ -2,9 +2,9 @@
     "name": "simpl-plus-formatter",
     "displayName": "Simpl+ Formatter",
     "description": "A formatter for Crestron Simpl+",
-    "icon": "./logo.png",
+    "icon": "logo.png",
     "version": "1.0.0",
-    "repository": "",
+    "repository": "https://github.com/Joery-M/Simpl-Formatter",
     "engines": {
         "vscode": "^1.62.0"
     },
