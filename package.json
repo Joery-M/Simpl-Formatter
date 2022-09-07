@@ -4,7 +4,7 @@
     "description": "A formatter for Crestron Simpl+",
     "icon": "logo.png",
     "publisher": "JoeryMunninghoff",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "repository": "https://github.com/Joery-M/Simpl-Formatter",
     "engines": {
         "vscode": "^1.62.0"
@@ -27,6 +27,36 @@
                 "extensions": [
                     ".usp"
                 ]
+            }
+        ],
+        "configuration": [
+            {
+                "title": "Simpl+ Formatter",
+                "order": 0,
+                "properties": {
+                    "simpl-plus-formatter.alignInputsAndOutputs": {
+                        "title": "Align inputs and outputs",
+                        "default": false,
+                        "markdownDescription": "If you have multiple inputs or outputs, align them horizontally.",
+                        "type": "boolean"
+                    },
+                    "simpl-plus-formatter.format": {
+                        "default": true,
+                        "markdownDescription": "Enable formatting with this extension",
+                        "type": "boolean"
+                    },
+                    "simpl-plus-formatter.placeOpenBraceOnNewLine": {
+                        "title": "Braces on newline",
+                        "default": false,
+                        "description": "Put the braces of statements on new lines instead of right behind them.",
+                        "type": "boolean"
+                    },
+                    "simpl-plus-formatter.showStatusIcon": {
+                        "default": false,
+                        "description": "Show an icon in the bottom right to show that the extension is active.",
+                        "type": "boolean"
+                    }
+                }
             }
         ]
     },
